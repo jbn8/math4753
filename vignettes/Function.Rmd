@@ -52,4 +52,9 @@ math4753nguy0057::ntickets_discrete(N=200, gamma=0.02, p=0.95)
  # Run `rm(list = c("ntickets_continuous"))` to remove the conflicts. 
 ```
 
+## github address
+```{r}
+# https://github.com/jbn8/math4753
+```
+
 
