@@ -1,0 +1,55 @@
+---
+title: "R Package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{R Package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(math4753nguy0057)
+```
+
+
+# Package Functions
+
+## mybin
+```{r}
+math4753nguy0057::mybin(iter=1000,n=18, p=0.3)
+```
+
+## mycltb
+```{r}
+math4753nguy0057::mycltb(n=5,iter=10000,p=0.5)
+```
+
+## ntickets_continuous
+```{r}
+math4753nguy0057::ntickets_continuous(N=200, gamma= 0.02, p=0.95)
+```
+
+## ntickets_discrete
+```{r}
+math4753nguy0057::ntickets_discrete(N=200, gamma=0.02, p=0.95)
+```
+
+## devtools() output
+```{r}
+#ℹ Loading math4753nguy0057
+#Warning message:
+#── Conflicts ────────────────────────────────────────────────────────────── math4753nguy0057 conflicts
+#──
+#✖ `ntickets_continuous` masks `math4753nguy0057::ntickets_continuous()`.
+#ℹ Did you accidentally source a file rather than using `load_all()`?
+ # Run `rm(list = c("ntickets_continuous"))` to remove the conflicts. 
+```
+
+
